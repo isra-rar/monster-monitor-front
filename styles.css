@@ -1,0 +1,98 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #0f0;
+}
+
+/* Estilos para as tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Centralizar o texto */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+thead {
+    background-color: #333;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #111;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #222;
+}
+
+@media (max-width: 600px) {
+    th, td {
+        font-size: 12px;
+    }
+}
+
+.tab {
+    overflow: hidden;
+    background-color: var(--monster-green); /* Usando a cor associada ao "Consumo de Monster" para o fundo das abas */
+    display: flex; /* Adicionando flexbox para centralizar os botões das abas */
+    justify-content: center; /* Centralizando os botões das abas */
+}
+
+.tab button {
+    background-color: #4CAF50; /* Verde padrão para os botões de aba */
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #45a049; /* Tom mais escuro de verde ao passar o mouse */
+}
+
+.tab button.active {
+    background-color: #45a049; /* Tom mais escuro de verde para a aba ativa */
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    background-color: var(--monster-green); /* Usando a cor associada ao "Consumo de Monster" para o fundo do conteúdo das abas */
+    color: #fff; /* Texto branco para contraste */
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+    margin-bottom: 20px; /* Espaçamento inferior para melhorar a aparência */
+}

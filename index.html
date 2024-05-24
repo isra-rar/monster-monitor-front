@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monster Monitor</h1>
+        <div class="tab">
+            <button class="tablink" onclick="openTab(event, 'participants')">Participantes</button>
+            <button class="tablink" onclick="openTab(event, 'debts')">Débitos</button>
+        </div>
+
+        <div id="participants" class="tabcontent">
+            <h2>Participantes</h2>
+            <table id="participantsTable">
+                <!-- Os dados dos participantes serão inseridos aqui via JavaScript -->
+            </table>
+        </div>
+
+        <div id="debts" class="tabcontent">
+            <h2>Débitos</h2>
+            <table id="debtsTable">
+                <!-- Os dados dos débitos serão inseridos aqui via JavaScript -->
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
